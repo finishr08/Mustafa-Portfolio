@@ -297,15 +297,16 @@ body::selection {
   width: 550px;
   height: 550px;
   z-index: 9;
-  box-shadow: 0 0 20px #00000080;
+  box-shadow: 0 0 20px #e2e2e280;
 }
 
 .hoodie-guy {
   position: absolute;
+  margin-left: 48px;
   background: url(assets/Hoodie-guy.png);
   top: 100px;
-  height: 550px;
-  width: 550px;
+  height: 450px;
+  width: 450px;
   background-size: cover;
 }
 
@@ -351,11 +352,70 @@ body::selection {
   object-fit: cover;
 }
 
+
+/* Skills */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  padding: 50px 100px;
+}
+
+.skills h1 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+.skill-card {
+  height: 15vw;
+  width: 15vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.skill-card:hover {
+  background-color: #00b840;
+}
+
+.skill-card img {
+  height: 7.5vw;
+  width: 7.5vw;
+  object-fit: contain;
+}
+
+.skill-card h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fbfbfb;
+}
+
 /* ----------INTRODUCTION---------- */
 #introduction {
   display: flex;
   justify-content: space-between;
-  padding: 100px;
+  padding-top: 70px;
+  padding-left: 100px;
   background-color: #25262a;
   min-height: 95vh;
   align-items: center;
@@ -458,7 +518,7 @@ body::selection {
 }
 
 /* ----------LATEST WORKS---------- */
-#latest-works {
+#latest-works { 
   min-height: 150vh;
   background-color: #25262a;
   padding: 150px;
@@ -609,6 +669,7 @@ body::selection {
   height: 100vh;
   width: 100%;
   padding: 100px 150px;
+  margin-bottom: 50px;
 }
 
 .testimonial-title {
@@ -890,7 +951,9 @@ body::selection {
   color: #64f4ac;
   font-weight: 900;
 }
-
+.social-icons{
+  margin-top: 20px;
+}
 .social-icons a {
   text-decoration: none;
 }
